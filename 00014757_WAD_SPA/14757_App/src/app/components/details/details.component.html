@@ -1,0 +1,19 @@
+<!-- {{item.title}}
+{{item.rank}}
+{{item.category.name}} -->
+
+<div class="flex mt-8 justify-center">
+    <mat-card class="shadow w-4/12">
+        <mat-card-content>
+            <div class="p-8">
+                <p class="text-gray-700">{{ item.id }}</p>
+                <h2 class="text-3xl font-bold mb-4">{{ item.title }}</h2>
+                <p class="text-gray-700">{{ item.rank }}</p>
+                <div class="mt-4 container">
+                    <span class="text-gray-600">User:</span>
+                    <mat-chip class="ml-2">{{ item.category.name }}</mat-chip>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
